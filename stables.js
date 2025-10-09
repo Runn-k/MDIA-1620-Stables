@@ -54,6 +54,7 @@ let horseThreeObj = {
   age: 7,
   nickname: "Patty",
   favoriteSnack: "Pringles",
+  rent: "300",
   color: "pink",
   isInside: true,
   rent: monthlyFee,
@@ -70,19 +71,71 @@ let Favoritesnack = ["Oreo", "KitKat", "Pringles"];
 let horseIntro = "All horse's favorite snacks are in the fridge:" + 
   (Favoritesnack[0]) + "," + (Favoritesnack[1]) + " and " + (Favoritesnack[2]);
 
-console.log(horseIntro);
 
-let newHores = {
+let newHorse = {
   name: "Taylor",
   nickname: "tt",
   age: 6,
   isInside: false,
-  snacks: m&m,
   rent: 150,
-  color: black,
-  style: wearing white socks,
-  
+  color: "black",
+  style: "wearing socks",
 }
+
+console.log(horses.horseOne.name + " is " + horses.horseOne.age + " years old ");
+
+function printHorseAge(horseAge, horseName) {
+  console.log(horseName + 
+    " is " + 
+    horseAge + 
+    " years old! Next year, they will be " + 
+    (horseAge +1) + 
+    " years old! ");
+}
+
+printHorseAge(8, "Brandy");
+printHorseAge(horse.horseOneAge.age, horse.horseOne.name);
+
+
+//In class week 6//
+let horseName =["brandy", "garfield", "pattrick"];
+
+console.log ("My horse are called " + 
+              horseName[0] +
+              "," + 
+              horseName[1] + 
+              ", and " +
+              horseName[2] 
+);
+console.log (" My horses are named " + horseName.join());
+
+function squareThisNumber(number) {
+  console.log(number * number);
+}
+
+squareThisNumber(3);
+squareThisNumber(11); 
+
+function addTheseTwoThings(firstThingToAdd, secondThingToAdd) {
+  console.log (" When you add " + 
+              firstThingToAdd + 
+              " and " + 
+              secondThingToAdd + 
+              ", you get a total of " +
+              (firstThingToAdd + secondThingToAdd)
+                );
+}
+
+let firstNumber = 2;
+let secondNumber = 22;
+let arrayOfNumbers = [3,9,17,42];
+
+//These call the arguments => (3 and 7)//
+addTheseTwoThings(3, 7);
+addTheseTwoThings(24, 37);
+addTheseTwoThings(firstNumber, secondNumber);
+addTheseTwoThings(arrayOfNumbers[0], arrayOfNumbers[2]);
+
 
 // Week 4 // INDEX start at 0, ARRAY always []
 
@@ -127,4 +180,5 @@ let newHores = {
   //horseObj.age +
   //" years old!"
 //);
+
 
